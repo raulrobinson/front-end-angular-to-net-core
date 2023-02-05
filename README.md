@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
 
+#### Routing
+- product.service.ts
+- url = 'https://localhost:5000/gateway/product';
+
+- users.service.ts
+- url = 'https://localhost:5000/gateway/user';
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
