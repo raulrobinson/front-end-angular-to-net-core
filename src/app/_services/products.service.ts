@@ -2,14 +2,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../_models/Product';
-//import configurl from '../assets/config/config.json'
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
 
-  //url = configurl.apiServer.url + '/product';
-  url = 'https://localhost:5000/gateway/product';
+  url = `${environment.HOST}` + 'product';
 
   constructor(private http: HttpClient) { }
 

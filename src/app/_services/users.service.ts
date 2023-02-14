@@ -1,16 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../_models/User';
-//import configurl from "../assets/config/config.json"
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersService {
 
-  //url = configurl.apiServer.url + '/user';
-  url = 'https://localhost:5000/gateway/user';
+  url = `${environment.HOST}` + 'user';
 
   constructor(private http: HttpClient) { }
 

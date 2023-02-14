@@ -1,6 +1,6 @@
 {
   "apiServer": {
-    "url": "https://localhost:7283/gateway",
+    "url": "https://localhost:5000",
     "version": "v1"
   }
 }
